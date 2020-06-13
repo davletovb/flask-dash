@@ -1,0 +1,18 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" />
+  <h1 class="site-title">{{ title }}</h1>
+  <p class="subtitle">Demo for Dash (View source on <a href="https://github.com/toddbirchard/plotlydash-flask-tutorial">Github</a>).</p>
+  <a href="/dashapp/" class="dash-link">
+    <span>Dashboard</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  <br>
+  <a href="/sheet/" class="dash-link">
+    <span>Sheet</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+{% endblock %}
