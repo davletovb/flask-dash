@@ -10,11 +10,11 @@ class Config:
     """Flask configuration variables."""
 
     # General Config
-    SECRET_KEY = "UYi7KVumXTIBxd3"
+    SECRET_KEY = environ.get('SECRET_KEY')
     FLASK_APP = environ.get('FLASK_APP')
     FLASK_ENV = environ.get('FLASK_ENV')
-    GOOGLE_OAUTH_CLIENT_ID="CLIENT_ID"
-    GOOGLE_OAUTH_CLIENT_SECRET="CLIENT_SECRET"
+    GOOGLE_OAUTH_CLIENT_ID=environ.get('CLIENT_ID')
+    GOOGLE_OAUTH_CLIENT_SECRET=environ.get('CLIENT_SECRET')
     environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
     # Assets
