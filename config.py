@@ -13,8 +13,8 @@ class Config:
     SECRET_KEY = "UYi7KVumXTIBxd3"
     FLASK_APP = environ.get('FLASK_APP')
     FLASK_ENV = environ.get('FLASK_ENV')
-    GOOGLE_OAUTH_CLIENT_ID="954979906601-rskdpng9motgmjr56m7mqmtm70t5vvvq.apps.googleusercontent.com"
-    GOOGLE_OAUTH_CLIENT_SECRET="UYi7KVumXTIBxd3_034LW34O"
+    GOOGLE_OAUTH_CLIENT_ID="CLIENT_ID"
+    GOOGLE_OAUTH_CLIENT_SECRET="CLIENT_SECRET"
     environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
     # Assets
